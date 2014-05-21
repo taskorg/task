@@ -1,0 +1,32 @@
+<cluster xmlns="http://caucho.com/ns/resin" xmlns:resin="urn:java:com.caucho.resin">
+	<database>
+		<jndi-name>jdbc/task</jndi-name>
+		<driver type="com.mysql.jdbc.Driver">
+			<url>jdbc:mysql://127.0.0.1:3306/task</url>
+			<user>root</user>
+			<password>123qwe</password>
+		</driver>
+		<max-connections>10</max-connections>
+		<max-idle-time>30s</max-idle-time>
+	</database>
+	<database>
+		<jndi-name>jdbc/uc</jndi-name>
+		<driver type="com.mysql.jdbc.Driver">
+			<url>jdbc:mysql://127.0.0.1:3306/uc</url>
+			<user>root</user>
+			<password>123qwe</password>
+		</driver>
+		<max-connections>10</max-connections>
+		<max-idle-time>30s</max-idle-time>
+	</database>
+	<database>
+		<jndi-name>jdbc/mc</jndi-name>
+		<driver type="com.mysql.jdbc.Driver">
+			<url>jdbc:mysql://127.0.0.1:3306/mc</url>
+			<user>root</user>
+			<password>123qwe</password>
+		</driver>
+		<max-connections>10</max-connections>
+		<max-idle-time>30s</max-idle-time>
+	</database>
+</cluster>
